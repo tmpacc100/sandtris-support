@@ -6,7 +6,7 @@
 <title>Sandtris — Support</title>
 <style>
   :root { color-scheme: dark; }
-  body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Hiragino Sans","Noto Sans JP",sans-serif;
     background:#0b0d17; color:#e7e9f3; line-height:1.65; }
   .wrap { max-width:720px; margin:0 auto; padding:48px 24px 80px; }
   h1 { font-size:1.9rem; margin:0 0 4px; letter-spacing:.02em; }
@@ -17,48 +17,102 @@
   table { border-collapse:collapse; width:100%; margin-top:8px; }
   td { padding:7px 10px; border-bottom:1px solid #232842; vertical-align:top; }
   td:first-child { color:#8ab4ff; white-space:nowrap; font-weight:600; }
+  .lang { margin-top:56px; padding-top:8px; border-top:1px solid #232842; }
   footer { margin-top:48px; color:#66708f; font-size:.85rem; }
 </style>
 </head>
 <body>
 <div class="wrap">
   <h1>Sandtris — Support</h1>
-  <p class="tag">Tetris meets falling-sand physics.</p>
+  <p class="tag">Falling blocks crumble into real sand. Grow a big blob of one colour and burn it away.
+  · <a href="#ja">日本語</a></p>
 
   <div class="card">
-    <p style="margin:0">Need help or have feedback? Email
+    <p style="margin:0">Need help, found a bug, or saw an inappropriate ad? Email
     <a href="mailto:asd95179517@gmail.com">asd95179517@gmail.com</a> and we'll get
     back to you.</p>
   </div>
 
   <h2>How to play</h2>
-  <p>Shape the glowing tetromino as it falls — the instant it lands it crumbles
-  into thousands of sand grains that pile up with real physics. Grow a connected
-  mass of one colour past the match threshold and it collapses in a burst.</p>
+  <p>Steer the falling piece. The moment it lands it crumbles into sand that piles
+  up with real physics. Connect a big enough blob of one colour (about three pieces'
+  worth) and it ignites and burns away.</p>
   <table>
     <tr><td>Move</td><td>Drag left / right on the board</td></tr>
     <tr><td>Rotate</td><td>Tap the board</td></tr>
     <tr><td>Soft drop</td><td>Slow drag down</td></tr>
     <tr><td>Hard drop</td><td>Flick down</td></tr>
     <tr><td>Hold / swap</td><td>Tap the HOLD panel</td></tr>
-    <tr><td>Specials</td><td>Tap a power in the neon dock</td></tr>
+    <tr><td>Specials</td><td>Tap a special in the dock at the bottom</td></tr>
   </table>
 
   <h2>Specials</h2>
   <table>
-    <tr><td>RAIN</td><td>Pours the board's dominant colour from the sky to help finish a clear.</td></tr>
-    <tr><td>CLONE</td><td>Copies the current piece into NEXT so you can pile the same colour.</td></tr>
-    <tr><td>SHAKE</td><td>Jolts the board so steep piles collapse and merge.</td></tr>
-    <tr><td>VACUUM</td><td>Sucks the top band of sand into a vortex — an emergency clear.</td></tr>
+    <tr><td>HOLE</td><td>Opens a black hole that swirls a disc of sand inward and implodes — your escape hatch when the top fills up.</td></tr>
+    <tr><td>FLIP</td><td>Flips gravity: the whole dune peels up to the ceiling, then avalanches back down into a fresh layout.</td></tr>
+    <tr><td>MAGNET</td><td>Pulls every grain of your most common colour into one big blob — usually enough for an instant clear.</td></tr>
+    <tr><td>FLOOD</td><td>Washes your most common colour off the board — the fastest way to open up a clogged pile.</td></tr>
   </table>
 
+  <h2>Modes</h2>
+  <p><strong>Classic</strong> is endless play with three difficulties.
+  <strong>Journey</strong> is eight stages with their own twists, ending with a boss.
+  The <strong>Weekly Challenge</strong> is a new board every Monday with the same rules
+  for everyone; beat its par score for bonus rewards.</p>
+
   <h2>FAQ</h2>
-  <p><strong>How do I lose?</strong> Watch the hourglass meter on the left. If
-  sand chokes the spawn corridor, the run ends.</p>
-  <p><strong>Does it need internet?</strong> No. Sandtris plays fully offline and
-  collects no data — see our
-  <a href="privacy.html">Privacy Policy</a>.</p>
-  <p><strong>Is my progress saved?</strong> Yes, locally on your device.</p>
+  <p><strong>How do I lose?</strong> If sand blocks the area where new pieces appear,
+  the run ends. The hourglass meter on the left warns you as the top fills up.</p>
+  <p><strong>Does it need internet?</strong> No, you can play offline. When you are
+  online, the free version shows ads from Google AdMob. What the ad SDK collects is
+  explained in our <a href="privacy.html">Privacy Policy</a>.</p>
+  <p><strong>Is my progress saved?</strong> Yes, locally on your device. Deleting the
+  app deletes your progress.</p>
+  <p><strong>I saw an inappropriate ad.</strong> Tap the ⓘ / AdChoices mark on the ad
+  to report it to Google, or email us with a screenshot.</p>
+
+  <div class="lang" id="ja">
+    <h1>Sandtris — サポート</h1>
+    <p class="tag">落ちてきたブロックが本物の砂に崩れる。同じ色を大きくつなげて燃やそう。</p>
+
+    <div class="card">
+      <p style="margin:0">ご質問・不具合のご報告・不適切な広告のご連絡は
+      <a href="mailto:asd95179517@gmail.com">asd95179517@gmail.com</a> までメールでお送りください。</p>
+    </div>
+
+    <h2>あそびかた</h2>
+    <p>落ちてくるブロックを操作します。着地した瞬間に砂に崩れ、物理演算で積もっていきます。
+    同じ色の砂を大きくつなげる（ブロック3個分くらい）と、火がついて燃え尽きます。</p>
+    <table>
+      <tr><td>移動</td><td>盤面を左右にドラッグ</td></tr>
+      <tr><td>回転</td><td>盤面をタップ</td></tr>
+      <tr><td>ソフトドロップ</td><td>ゆっくり下にドラッグ</td></tr>
+      <tr><td>ハードドロップ</td><td>下にフリック</td></tr>
+      <tr><td>ホールド</td><td>HOLD パネルをタップ</td></tr>
+      <tr><td>スペシャル</td><td>下のドックのスペシャルをタップ</td></tr>
+    </table>
+
+    <h2>スペシャル</h2>
+    <table>
+      <tr><td>ホール</td><td>ブラックホールが砂を渦巻きながら吸い込んで爆縮。上が詰まったときの脱出口。</td></tr>
+      <tr><td>フリップ</td><td>重力を反転。砂山が天井へ剥がれ上がり、崩れ落ちて新しい配置になる。</td></tr>
+      <tr><td>マグネット</td><td>一番多い色の砂をすべて一つの大きな塊に集める。たいてい即消しできる。</td></tr>
+      <tr><td>フラッド</td><td>一番多い色を洪水で洗い流す。詰まった盤面を一気に空ける最速の手段。</td></tr>
+    </table>
+
+    <h2>モード</h2>
+    <p><strong>クラシック</strong>は3段階の難易度で遊べるエンドレスモード。
+    <strong>ジャーニー</strong>はそれぞれ仕掛けの違う8ステージで、最後はボス戦。
+    <strong>ウィークリーチャレンジ</strong>は毎週月曜に全員共通ルールの新しい盤面が登場し、目標スコアを超えるとボーナスがもらえます。</p>
+
+    <h2>よくある質問</h2>
+    <p><strong>どうなるとゲームオーバー？</strong> 新しいブロックが出てくる場所が砂で塞がるとランが終わります。
+    上が詰まってくると左の砂時計メーターが警告します。</p>
+    <p><strong>インターネットは必要？</strong> オフラインでも遊べます。オンライン時は無料版に Google AdMob の広告が表示されます。
+    広告 SDK が収集する情報は<a href="privacy.html">プライバシーポリシー</a>をご覧ください。</p>
+    <p><strong>進行状況は保存される？</strong> はい、端末内に保存されます。アプリを削除すると進行状況も消えます。</p>
+    <p><strong>不適切な広告が表示された</strong> 広告の ⓘ（AdChoices）マークから Google に報告できます。スクリーンショットを添えてメールでご連絡いただいても構いません。</p>
+  </div>
 
   <footer>© 2026 Makino Shii · Sandtris</footer>
 </div>
