@@ -43,8 +43,8 @@
       <tr><th>データ種別</th><th>例</th></tr>
       <tr><td>アプリ内の操作</td><td>画面の表示、ゲームの開始・終了とスコア、スペシャルや報酬の利用、設定の変更、広告の表示と報酬</td></tr>
       <tr><td>購入</td><td>「広告を削除」の購入・復元の結果（決済情報は含みません）</td></tr>
-      <tr><td>診断</td><td>起動時間、動作の重さ、異常終了の有無、端末の機種・OS・言語</td></tr>
-      <tr><td>識別子</td><td>Firebase のアプリインスタンスID（アプリを入れ直すと変わるランダムなID）。広告ID（IDFA / AAID）は分析に使いません</td></tr>
+      <tr><td>診断</td><td>起動時間、動作の重さ、異常終了の有無、端末の機種・OS・言語、画面の大きさ、文字の大きさなどのアクセシビリティ設定、電池残量・充電中か・省電力モード・発熱の状態、音の出力先（スピーカー・イヤホン等）と音量</td></tr>
+      <tr><td>識別子</td><td>Firebase のアプリインスタンスIDと、本アプリがインストールごとに作るランダムなID（どちらもアプリを入れ直すと変わり、氏名やアカウントとは結び付きません）。広告ID（IDFA / AAID）は分析に使いません</td></tr>
       <tr><td>おおよその地域</td><td>国・地域（Google が IP アドレスから推定。位置情報の権限は使いません）</td></tr>
     </table>
     <p>アプリの設定にある「使用状況データを送信」をオフにすると、その時点から送信を止めます。
@@ -130,8 +130,8 @@
       <tr><th>Data type</th><th>Examples</th></tr>
       <tr><td>Product interaction</td><td>Screens viewed, runs started and ended with their score, specials and rewards used, settings changed, ads shown and rewards earned</td></tr>
       <tr><td>Purchases</td><td>Whether a "Remove ads" purchase or restore succeeded (no payment details)</td></tr>
-      <tr><td>Diagnostics</td><td>Start-up time, slowdowns, whether the App closed unexpectedly, device model, OS, language</td></tr>
-      <tr><td>Identifier</td><td>The Firebase app instance ID (a random ID that changes if you reinstall). The advertising ID (IDFA / AAID) is not used for analytics</td></tr>
+      <tr><td>Diagnostics</td><td>Start-up time, slowdowns, whether the App closed unexpectedly, device model, OS, language, screen size, accessibility settings such as text size, battery level, charging, low-power mode, thermal state, audio output type (speaker, headphones, etc.) and volume</td></tr>
+      <tr><td>Identifiers</td><td>The Firebase app instance ID and a random ID the App creates for each installation (both change if you reinstall and are not tied to your name or any account). The advertising ID (IDFA / AAID) is not used for analytics</td></tr>
       <tr><td>Coarse location</td><td>Country and region, estimated by Google from the IP address (no location permission is used)</td></tr>
     </table>
     <p>Turn off "Send usage data" in the App's settings to stop sending it from
